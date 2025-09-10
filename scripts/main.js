@@ -17,5 +17,19 @@ let myHeading = document.querySelector("h1");
 function setUserName() {
     const myName = prompt("please enter your name");
     localStorage.setItem("name", myName);
-    myHeading.textContent = `My website is pretty mint, ${myName}`;
+    myHeading.textContent = `Welcome to my CS website, ${myName}`;
 }
+
+//initialisation code - runs when page first loads to start program//
+//sets the name in intro message to the inputted name//
+if (!localStorage.getItem("name")) {
+    setUserName();
+} else {
+    const storedName = localStorage.getItem("name");
+    myHeading.textContent = `Welcome to my CS website, ${storedName}`;
+}
+
+//adds a click feature to allow the user to enter another name if they want//
+myButton.addEventListener("click", () => {
+    setUserName();
+});
