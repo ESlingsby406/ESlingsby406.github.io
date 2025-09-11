@@ -33,3 +33,13 @@ if (!localStorage.getItem("name")) {
 myButton.addEventListener("click", () => {
     setUserName();
 });
+
+function setUserName() {
+    const myName = prompt("please enter your name");
+    if (!myName) {
+        setUserName();
+    } else {
+        localStorage.setItem("name", myName);
+        myHeading.textContent = `Welcome to my CS website, ${myName}`;
+    }
+}
