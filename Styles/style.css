@@ -1,0 +1,49 @@
+/* changes paragraph and list colour to blueviolet */
+/* changes font size and letter spacing*/
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #00539f;
+    width: 800px;
+}
+
+/* Changes title colour to purple */
+/*changes font size*/
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* changes font size and font family property inside of the html tags */
+html {
+    font-size: 10px;
+    font-family: "Lexend", sans-serif;
+    background-color: #00539f;
+}
+
+/* formats the style of the section between the body tags */
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #65625d;
+    padding: 0 350px 350px 350px;
+    border: 5px solid black;
+}
+
+/* formats the image to fit the page */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.done {
+    color: darkgreen;
+    text-decoration: line-through solid black 2px;
+}
