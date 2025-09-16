@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>My test page</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="Styles/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
@@ -14,21 +14,46 @@
 </head>
 
 <body>
-    <!-- Main Title -->
-    <h1> Elias' Computer Science Website</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo"
+                    width="60px"
+                    height="50px">
+                </a>
+            </div>
 
-    <!-- adds a button to change the user welcome greeting-->
-    <button>Change User</button>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a class="btn"> <btn> Change User</btn> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- adds image to website -->
-    <img src="images/sunrise-image.jpg" alt="a sunrise over a field" />
-
+    <!-- Main Section-->
+     <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <h1 class="main-heading text-xxl">
+                    Welcome to my Computer Science website
+                </h1>
+                <p class="main-text text-sm">
+                    Hello! My name is Elias Slingsby and this is
+                    a website I made for my Computer Science A-level.
+                </p>
+            </div>
+        </div>
+     </section>
     <!-- Paragraph one-->
     <p> This is my first attempt at making a website using html for my CS a-level</p>
 
     <!-- List of a-level subjects-->
     <p> for my a-levels I am taking:<p>
-        
+
     <ul>
         <li>Computer Science</li>
         <li>Design</li>

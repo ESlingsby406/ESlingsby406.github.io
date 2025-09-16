@@ -1,39 +1,35 @@
-/* changes paragraph and list colour to blueviolet */
-/* changes font size and letter spacing*/
-p,
-li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color: #00539f;
-    width: 800px;
-}
-
-/* Changes title colour to purple */
-/*changes font size*/
-h1 {
+/* formats everything */
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px 0;
-    color: #00539f;
-    text-shadow: 3px 3px 1px black;
-    font-size: 60px;
-    text-align: center;
+    padding: 0;
 }
 
-/* changes font size and font family property inside of the html tags */
-html {
-    font-size: 10px;
-    font-family: "Lexend", sans-serif;
-    background-color: #00539f;
+/* assignes a variable using -- */
+:root {
+    --primary-colour: #040C9A;
+    --light-colour: #f4f4f6;
+    --dark-colour: #111;
 }
 
 /* formats the style of the section between the body tags */
 body {
-    width: 600px;
+    width: auto;
     margin: 0 auto;
-    background-color: #65625d;
-    padding: 0 350px 350px 350px;
-    border: 5px solid black;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000435;
+    color: var(--light-colour);
+}
+
+/* formats links */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
 }
 
 /* formats the image to fit the page */
@@ -43,7 +39,141 @@ img {
     max-width: 100%;
 }
 
-.done {
-    color: darkgreen;
-    text-decoration: line-through solid black 2px;
+/* nav bar */
+.navbar {
+    background-color: #e5e5e5;
+    padding: 20px;
+
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* calls variable using var() */
+.navbar ul li a:hover {
+    color: var(--primary-colour);
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+.main .container {
+    background: url('../images/main.bg.png');
+}
+
+
+/* utility classes */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+/* buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-colour);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-colour);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-colour);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    background: var(--light-colour);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* text classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px 40px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px 40px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px 45px;
+}
+
+.text-center {
+    text-align: center;
 }
