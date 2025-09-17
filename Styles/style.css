@@ -49,11 +49,16 @@ img {
 .navbar .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 
 .navbar .main-menu ul {
     display: flex;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
 }
 
 .navbar ul li a {
@@ -61,6 +66,10 @@ img {
     display: block;
     font-weight: 600;
     transition: 0.5s;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 20px;
 }
 
 /* calls variable using var() */
@@ -72,8 +81,22 @@ img {
     margin-bottom: 50px;
 }
 
-.main .container {
-    background: url('../images/main.bg.png');
+.main-image-1 {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 300px;
+    bottom: 100px;
+    border-radius: 10px;
+}
+
+.main-image-2 {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 900px;
+    bottom: 10px;
+    border-radius: 10px;
 }
 
 
@@ -87,13 +110,13 @@ img {
 
 .container-sm {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 10;
     padding: 0 15px;
-    
+    text-align: left;
 }
 
 /* buttons */
-.btn {
+.btnUser {
     display: inline-block;
     padding: 13px 20px;
     background: var(--light-colour);
@@ -106,7 +129,20 @@ img {
     transition: 0.5s;
 }
 
-.btn:hover{
+.btn-link {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-colour);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnUser .btn-dark:hover{
     opacity: 0.8;
 }
 

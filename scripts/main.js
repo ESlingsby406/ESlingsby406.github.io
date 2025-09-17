@@ -1,4 +1,4 @@
-let btn = document.querySelector("btn");
+let btn = document.querySelector("btnUser");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
