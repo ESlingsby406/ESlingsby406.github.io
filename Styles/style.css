@@ -84,19 +84,21 @@ img {
 .main-image-1 {
     width: 600px;
     height: 400px;
-    position: absolute;
+    position: relative;
     left: 300px;
     bottom: 100px;
     border-radius: 10px;
+    z-index: -1;
 }
 
 .main-image-2 {
     width: 400px;
     height: 500px;
-    position: absolute;
+    position: relative;
     left: 900px;
     bottom: 10px;
     border-radius: 10px;
+    z-index: -1;
 }
 
 
