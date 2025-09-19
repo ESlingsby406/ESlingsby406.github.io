@@ -101,6 +101,12 @@ img {
     z-index: -1;
 }
 
+.main-text2 {
+    position: relative;
+    left: 0px;
+    bottom: 100px;
+}
+
 
 /* utility classes */
 .container {
