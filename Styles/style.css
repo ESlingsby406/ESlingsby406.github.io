@@ -88,7 +88,7 @@ img {
     left: 300px;
     bottom: 100px;
     border-radius: 10px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .main-image-2 {
@@ -99,13 +99,6 @@ img {
     bottom: 550px;
     border-radius: 10px;
     z-index: -1;
-}
-
-.main-text2 {
-    position: relative;
-    left: 0px;
-    bottom: 10000px;
-    z-index: -2;
 }
 
 
