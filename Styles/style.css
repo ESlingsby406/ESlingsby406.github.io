@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 /* assignes a variable using -- */
 :root {
     --primary-colour: #040C9A;
@@ -84,9 +85,9 @@ img {
 .main-image-1 {
     width: 600px;
     height: 400px;
-    position: relative;
+    position: absolute;
     left: 250px;
-    bottom: 500px;
+    bottom: 75px;
     border-radius: 10px;
     z-index: -1;
 }
@@ -94,21 +95,21 @@ img {
 .main-image-2 {
     width: 400px;
     height: 500px;
-    position: relative;
+    position: absolute;
     left: 900px;
-    bottom: 900px;
+    bottom: 10px;
     border-radius: 10px;
     z-index: -1;
 }
 
 .languages-image {
-    position: relative;
+    position: absolute;
     z-index: -1;
     border-radius: 10px;
     width: 500px;
     height: 500px;
     left: 40px;
-    bottom: 875px;
+    bottom: -550px;
 }
 
 
