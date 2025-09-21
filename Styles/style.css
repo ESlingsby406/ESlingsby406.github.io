@@ -85,10 +85,10 @@ img {
     width: 600px;
     height: 400px;
     position: relative;
-    left: 300px;
+    left: 200px;
     bottom: 100px;
     border-radius: 10px;
-    z-index: -2;
+    z-index: -1;
 }
 
 .main-image-2 {
@@ -115,6 +115,14 @@ img {
     margin: 0 10;
     padding: 0 15px;
     text-align: left;
+}
+
+.container2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    left: 800px;
+    top: 500px;
 }
 
 /* buttons */
