@@ -85,7 +85,7 @@ img {
     width: 600px;
     height: 400px;
     position: relative;
-    left: 200px;
+    left: 100px;
     bottom: 100px;
     border-radius: 10px;
     z-index: -1;
@@ -123,6 +123,7 @@ img {
     padding: 0 15px;
     left: 800px;
     top: 500px;
+    max-width: 800px;
 }
 
 /* buttons */
