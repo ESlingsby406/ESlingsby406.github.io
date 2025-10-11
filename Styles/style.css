@@ -26,6 +26,11 @@ body {
 h2 {
     color: #f4f4f6;
 }
+
+h3 {
+    text-decoration: underline;
+}
+
 /* formats links */
 a {
     text-decoration: none;
@@ -46,8 +51,7 @@ img {
 /* nav bar */
 .navbar {
     background-color: #e5e5e5;
-    padding: 20px;
-
+    padding: 10px;
 }
 
 .navbar .container {
@@ -72,13 +76,13 @@ img {
     transition: 0.5s;
 }
 
-.navbar ul li:last-child a {
+.navbar ul li a {
     margin-left: 20px;
 }
 
 /* calls variable using var() */
 .navbar ul li a:hover {
-    color: var(--primary-colour);
+    color: #000066;
 }
 
 .main {
@@ -107,17 +111,36 @@ img {
     z-index: -1;
 }
 
-.languages-image {
+.html-image {
     display: flex;
     position: absolute;
     z-index: -1;
     border-radius: 10px;
     width: 500px;
     height: 500px;
-    left: 40px;
-    bottom: -550px;
+    left: -400px;
 }
 
+.css-image {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    left: -385px;
+    top: 500px;
+}
+
+.javascript-image {
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    left: -500px;
+    bottom: -275px;
+}
 
 /* utility classes */
 .container {
@@ -169,6 +192,18 @@ img {
 .btn-link {
     display: inline-block;
     padding: 13px 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-teacher {
+    display: inline-block;
+    padding: 13px 20px;
     background: var(--light-colour);
     color: #333;
     font-weight: 600;
@@ -179,8 +214,14 @@ img {
     transition: 0.5s;
 }
 
-.btnUser .btn-dark:hover{
+.btnUser .btn-teacher .btn-dark:hover{
     opacity: 0.8;
+    text-decoration: none;
+}
+
+.btn-link:hover{
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .btn-primary {
@@ -230,7 +271,7 @@ button {
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 30px 0 20px;
+    margin: 40px 0 20px 40px;
 }
 
 .text-md {
