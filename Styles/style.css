@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 /* assignes a variable using -- */
 :root {
     --primary-colour: #040C9A;
@@ -35,6 +34,18 @@ h2 {
 h3 {
     text-decoration: bold;
     text-decoration: underline;
+}
+
+
+/* fonts */
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: bold;
+}
+
+p, li, a {
+    font-family: 'Rubik', sans-serif;
 }
 
 /* formats links */
@@ -145,7 +156,7 @@ img {
     top: 100px;
 }
 
-.image-container-cad {
+.image-container1 {
     position: absolute;
     display: flex;
     align-items: center;
@@ -155,7 +166,7 @@ img {
     top: 200px;
 }
 
-.image-container-cad img {
+.image-container1 img {
     width: 30%;
     height: 30%;
     border-radius: 10px;
@@ -163,6 +174,7 @@ img {
     justify-content: center;
     right: 100px;
 }
+
 
 /* utility classes */
 .container {
@@ -195,6 +207,15 @@ img {
     padding: 0 15px;
     max-width: 800px;
     top: 75px;
+    z-index: -1;
+}
+
+.project2-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 800px;
+    top: 600px;
     z-index: -1;
 }
 
