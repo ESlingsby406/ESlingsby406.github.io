@@ -112,7 +112,7 @@ img {
     height: 500px;
     position: absolute;
     left: 900px;
-    bottom: 10px;
+    bottom: 40px;
     border-radius: 10px;
     z-index: -1;
 }
@@ -138,11 +138,30 @@ img {
 
 .vex-image {
     position: absolute;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border-radius: 10px;
-    left: 840px;
+    left: 860px;
     top: 100px;
+}
+
+.image-container-cad {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    right: 100px;
+    left: -100px;
+    top: 200px;
+}
+
+.image-container-cad img {
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    object-fit: contain;
+    justify-content: center;
+    right: 100px;
 }
 
 /* utility classes */
